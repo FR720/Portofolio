@@ -30,7 +30,9 @@ const Contct = () => {
           onSubmit={(e) => {
             e.preventDefault();
             const formData = {
+              //@ts-ignore
               mail: e.target.mail.value,
+              //@ts-ignore
 
               subject: e.target.subject.value,
               //@ts-ignore
