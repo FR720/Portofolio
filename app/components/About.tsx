@@ -8,7 +8,7 @@ const About = () => {
     <section className="md:grid md:grid-cols-2 gap-8  py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
       <Image src="/about.webp" alt="about image" width={500} height={500} />
       <div className="flex flex-col text-white gap-4">
-        <h2 className="text-4xl font-bold">About Me</h2>
+        <h2 className="text-4xl font-bold text-gray-500">About Me</h2>
         <p className="text-base lg:text-lg">
           I am a full stack web developer with a passion for creating
           interactive and responsive web applications. I have experience working
