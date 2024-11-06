@@ -8,10 +8,10 @@ const Footer = () => {
         <div className="col-span-1 flex flex-col gap-2 ">
           <h3 className="text-2xl font-semibold text-yellow-500">Overview</h3>
           <p>
-            I'm a full-stack web developer skilled in Next.js and Express.js,
+            {` I'm a full-stack web developer skilled in Next.js and Express.js,
             building efficient, scalable applications with a focus on
             performance and user experience. Continuously expanding my
-            expertise, I aim to deliver impactful, tech-driven solutions.
+            expertise, I aim to deliver impactful, tech-driven solutions.`}
           </p>
         </div>
         <div className="col-span-1 flex flex-col  gap-4">

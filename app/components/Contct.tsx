@@ -4,6 +4,22 @@ import { FaGithub } from "react-icons/fa";
 import { IoLogoLinkedin } from "react-icons/io";
 
 const Contct = () => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = {
+      mail: (e.currentTarget.mail as HTMLInputElement).value,
+      subject: (e.currentTarget.subject as HTMLInputElement).value,
+      message: (e.currentTarget.message as HTMLTextAreaElement).value,
+    };
+
+    // Convert formData to a query string
+    const queryString = new URLSearchParams(formData).toString();
+
+    // Redirect to a URL with the query string
+    const newUrl = `/your-url-path?${queryString}`;
+    window.location.href = newUrl;
+  };
+
   return (
     <section className="grid grid-cols-3 gap-5 my-20">
       <div className=" flex flex-col gap-3">
@@ -26,22 +42,7 @@ const Contct = () => {
         </div>
       </div>
       <div className="col-span-2  place-items-end">
-        <form
-          onSubmit={(e) => {
-            e.preventDefault();
-            const formData = {
-              //@ts-ignore
-              mail: e.target.mail.value,
-              //@ts-ignore
-
-              subject: e.target.subject.value,
-              //@ts-ignore
-              message: e.target.message.value,
-            };
-            console.log(formData);
-          }}
-          className="flex flex-col gap-6 w-[70%]"
-        >
+        <form onSubmit={handleSubmit} className="flex flex-col gap-6 w-[70%]">
           <label htmlFor="mail" className="text-white text-sm -mb-3">
             Your Email
           </label>
@@ -50,7 +51,7 @@ const Contct = () => {
             name="mail"
             type="email"
             className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-            placeholder="examble@gmail.com"
+            placeholder="example@gmail.com"
           />
 
           <label htmlFor="subject" className="text-white text-sm -mb-3">
