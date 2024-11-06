@@ -5,7 +5,7 @@ const projects = [
   {
     image: "/new.png",
     title: "New Portfolio",
-    link: "https://portofolio-fady.vercel.app/#contacts",
+    link: "https://portofolio-fady.vercel.app",
   },
   {
     image: "/game.jpg",
