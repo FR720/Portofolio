@@ -22,10 +22,10 @@ const ProjectsCard: React.FC<CardProps> = ({ image, title, link }) => {
           alt={title}
           layout="fill"
           objectFit="cover"
-          className="rounded-t-lg  transition-transform transform hover:scale-105 max-w-96"
+          className="rounded-t-lg  transition-transform transform hover:scale-105 max-w-96 "
         />
       </div>
-      <h3 className="text-center text-white font-semibold p-2 text-lg">
+      <h3 className="text-center text-white font-semibold p-2 text-lg max-w-96">
         {title}
       </h3>
     </a>
