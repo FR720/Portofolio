@@ -1,4 +1,3 @@
-// pages/index.tsx
 "use client";
 import React, { useRef } from "react";
 import About from "./components/About";
@@ -33,7 +32,7 @@ export default function Home() {
 
       <div className="container mx-auto px-12 py-4 flex flex-col gap-20">
         <section ref={heroRef}>
-          <HeroSection />
+          <HeroSection contactRef={contactRef} />
         </section>
         <section ref={aboutRef}>
           <About />
