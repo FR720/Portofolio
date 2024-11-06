@@ -23,7 +23,7 @@ const Contact = () => {
           subject: formData.subject,
           message: formData.message,
         },
-        "fadyraouf231@gmail.com"
+        "JvYFcH428ij9fDmAy"
       );
 
       toast.success("Message sent successfully!");

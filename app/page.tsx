@@ -8,6 +8,8 @@ import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Home() {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -18,6 +20,7 @@ export default function Home() {
 
   return (
     <main className="flex flex-col min-h-screen bg-[#121212]">
+      <ToastContainer />
       <Navbar
         refs={{
           home: heroRef,
