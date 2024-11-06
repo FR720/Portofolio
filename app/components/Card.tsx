@@ -1,13 +1,13 @@
 import Image from "next/image";
 import React from "react";
 
-type CardProps = {
+interface CardProps {
   image: string;
   title: string;
   link: string;
-};
+}
 
-const ProjectsCard: React.FC<CardProps> = ({ image, title, link }) => {
+const ProjectsCard = ({ image, title, link }: CardProps) => {
   return (
     <a
       className="shadow-2xl rounded-lg  overflow-hidden text-white  max-w-96"
