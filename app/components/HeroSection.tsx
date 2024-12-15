@@ -51,12 +51,12 @@ const HeroSection = ({ contactRef }: Props) => {
             </a>
           </div>
         </div>
-        <div className="col-span-5 bg-[#181818] w-[350px] h-[500px] rounded-full relative place-self-center">
+        <div className="col-span-5 bg-[#181818] w-[250px] h-[220px] p-1 rounded-full relative place-self-center">
           <Image
-            src="/hero.jpg"
+            src="/hero.png"
             className="rounded-full absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
             alt="hero image"
-            width={300}
+            width={400}
             height={400}
           />
         </div>
