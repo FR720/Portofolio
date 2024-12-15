@@ -57,7 +57,7 @@ const HeroSection = ({ contactRef }: Props) => {
             className="rounded-full absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
             alt="hero image"
             width={400}
-            height={400}
+            height={410}
           />
         </div>
       </div>
